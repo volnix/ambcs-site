@@ -5,6 +5,7 @@
       width: 75%;
       float: right;
     }
+  
     .intro-text {
       left: 0;
       width: 80%;
@@ -32,8 +33,15 @@ section.page-section {
   #home-container {
 
     #home-img {
+      @media (max-width: 768px) {
+        display: none;
+      }
       height: auto;
       max-width: 100%;
+    }
+
+    #welcome-paragraph {
+      font-size: 1.0rem;
     }
   }
 }

@@ -2,7 +2,7 @@
   background-color: fade-out($secondary, 0.1);
   @include heading-font;
   .navbar-brand {
-    color: $primary;
+    color: $white;
   }
   .navbar-nav {
     .nav-item {
@@ -19,6 +19,7 @@
     }
   }
   @media (min-width: 992px) {
+    max-height: 20px;
     .navbar-nav {
       .nav-item {
         .nav-link {
