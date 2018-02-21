@@ -41,7 +41,7 @@
             <li class="nav-item <%= current_page.data.name == "home" ? "active" : "" %> px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="index.html" id="nav-home">Home</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item <%= current_page.data.name == "about" ? "active" : "" %> px-lg-4">
               <div class="dropdown show ">
                 <a class="nav-link text-uppercase text-expanded dropdown-toggle" href="#" role="button" id="about-dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
@@ -56,13 +56,13 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item <%= current_page.data.name == "calendar" ? "active" : "" %> px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="calendar.html" id="nav-calendar">Calendar</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item <%= current_page.data.name == "sponsors" ? "active" : "" %> px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="sponsors.html" id="nav-results">Sponsors</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item <%= current_page.data.name == "results" ? "active" : "" %> px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="results.html" id="nav-results">Results</a>
             </li>
           </ul>

@@ -1,0 +1,35 @@
+div.calendar-block {
+
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	table {
+
+		thead {
+			font-size: 1.25rem;
+		}
+
+		td, th {
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		width: 100%;
+
+		tr {
+			border-color: black;
+			border-width: 10px;
+
+			td:first-child {
+				font-weight: bold;
+			}
+
+		}
+	}
+}
