@@ -33,12 +33,14 @@ p {
   .site-heading-upper {
     display: block;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 500;
+    color: $black !important;
   }
   .site-heading-lower {
     font-size: 5rem;
-    font-weight: 200;
+    font-weight: 700;
     line-height: 4rem;
+    color: black;
   }
 }
 
@@ -66,10 +68,28 @@ p {
 }
 
 #main-content {
-  background-color: rgba(233, 236, 239, .9);
+  //background-color: rgba(233, 236, 239, .9);
+  background-color: rgba(193, 193, 193, .9);
   margin-bottom: 0;
 
   div.page-title-block {
     text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  ul.list-group {
+    background-color: transparent;
+
+    li {
+      background-color: transparent;
+    }
+
+    :last-child {
+      border-bottom: none;
+    }
+
+    :first-child {
+      border-top: none;
+    }
   }
 }

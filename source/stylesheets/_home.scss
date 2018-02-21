@@ -32,16 +32,22 @@ section.page-section {
 
   #home-container {
 
-    #home-img {
-      @media (max-width: 768px) {
-        display: none;
+    #img-home-container {
+      text-align: center;
+      margin-bottom: 1rem;
+      #home-img {
+        @media (max-width: 768px) {
+          width: 250px;
+          height: 250px;
+        }
+        height: auto;
+        max-width: 100%;
       }
-      height: auto;
-      max-width: 100%;
     }
 
     #welcome-paragraph {
-      font-size: 1.0rem;
+      font-size: .9rem;
+      font-weight: 550;
     }
   }
 }
