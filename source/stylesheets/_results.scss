@@ -1,0 +1,25 @@
+div.results-heading {
+	text-align: center;
+}
+
+div.results-body {
+	margin-top: 1rem;
+
+	div.results-body-block {
+		padding-top: .75em;
+		padding-bottom: .75rem;
+
+		h4 {
+			font-size: 1.25rem;
+		}
+
+		p {
+			font-size: .85rem;
+		}
+
+		address {
+			margin-top: .25rem;
+			text-align: center;
+		}
+	}
+}
