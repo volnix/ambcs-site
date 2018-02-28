@@ -1,9 +1,9 @@
 .footer {
-  background-color: fade-out($secondary, 0.3);
+  background-color: fade-out($navbar, 0.3);
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
  
   p {
-  	color: $white;
+  	color: $link-color;
   }
 }

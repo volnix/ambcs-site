@@ -1,0 +1,30 @@
+#faq-top-section {
+	margin-bottom: 2.5rem;
+
+	#faq-links {
+		a {
+			font-size: .95rem;
+		}
+		
+	}
+}
+
+#faq-answer-section {
+
+	.faq-answer {
+
+		h5 {
+			color: $yellow;
+			font-style: italic;
+			font-size: .9rem;
+		}
+
+		p {
+			font-size: .85rem;
+		}
+
+		ul > li {
+			font-size: .85rem;
+		}
+	}
+}
