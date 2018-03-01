@@ -1,8 +1,8 @@
 body {
   @include body-font;
-  background: url('../images/background-rider.jpeg');
+  background: url('../images/bg.jpg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: 0% 25%;
   background-size: cover;
 }
 
@@ -40,7 +40,7 @@ p {
     font-size: 5rem;
     font-weight: 700;
     line-height: 4rem;
-    color: fade-out($navbar, 0.15);
+    color: fade-out($yellow, 0.15);
   }
 }
 
@@ -106,4 +106,14 @@ p {
       border-top: none;
     }
   }
+}
+
+.back-page-img {
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 250px;
+  }
+  height: auto;
+  max-width: 100%;
+  margin-top: 1rem;
 }

@@ -3,7 +3,7 @@
   background-color: fade-out($navbar, 0.4);
   @include heading-font;
   .navbar-brand {
-    color: $link-color;
+    color: $yellow;
   }
   .navbar-nav {
     .nav-item {
