@@ -108,12 +108,16 @@ p {
   }
 }
 
-.back-page-img {
-  @media (max-width: 768px) {
-    width: 250px;
-    height: 250px;
-  }
-  height: auto;
-  max-width: 100%;
-  margin-top: 1rem;
+.back-page-img-container {
+
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+.back-page-img {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    height: auto;
+    max-width: 100%;
+  }

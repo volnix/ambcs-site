@@ -1,0 +1,40 @@
+#links-top-section {
+	margin-bottom: 1.5rem;
+
+	#links-links {
+		a {
+			font-size: 1.25rem;
+		}
+
+		.list-group-item {
+			padding: .25rem;
+		}
+
+		ul {
+			@media (min-width: 768px) {
+		      margin-top: 1.25rem;
+		    }
+		}
+	}
+}
+
+#links-section {
+
+	.links-type-section {
+
+		h4 {
+			color: $yellow;
+			font-style: bold;
+			font-size: 1.25rem;
+		}
+
+		p {
+			font-size: .85rem;
+		}
+
+		ul > li {
+			font-size: .85rem;
+			padding: .2rem;
+		}
+	}
+}
