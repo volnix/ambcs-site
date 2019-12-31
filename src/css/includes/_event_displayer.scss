@@ -1,0 +1,13 @@
+@import 'colors';
+
+table {
+    td {
+        a {
+            color: $yellow;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}

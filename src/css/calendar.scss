@@ -1,0 +1,46 @@
+@import 'includes/common';
+
+#header {
+    background-color: rgba(black, .75);
+    padding: 15px 0px;
+    height: auto !important;
+}
+
+#calendar {
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/backgrounds/bike.jpg') top center;
+    //background: url('../images/background-bell-rider.jpg') top center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+
+    &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .calendar-block {
+        text-align: center;
+
+        &:last-child {
+            margin-top: 2rem;
+        }
+
+        table {
+            color: white;
+
+            tr:hover {
+                color:white;
+                background-color: rgba(0, 0, 0, 0.2);
+
+            }
+        }
+    }
+}

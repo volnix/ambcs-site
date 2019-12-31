@@ -1,0 +1,10 @@
+
+version: '2'
+services:
+  app:
+    image: nginx
+    volumes:
+      - ./public:/usr/share/nginx/html
+    working_dir: /usr/share/nginx/html
+    ports:
+      - "32123:80"
