@@ -8,7 +8,7 @@ export default class EventDisplayer {
     }
 
     display(races) {
-        if (! races) {
+        if (! races || races.length == 0) {
             let p = document.createElement('p');
             p.innerHTML = 'No races found!';
             p.className = 'no-races';
@@ -44,5 +44,8 @@ export default class EventDisplayer {
             table.appendChild(body);
             table.style = "";
         }
+
+        // Hide our loader
+        this.element.getElementsByClassName('loader')[0].style = 'display: none;';
     }
 }

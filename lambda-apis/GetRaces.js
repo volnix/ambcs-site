@@ -8,17 +8,30 @@ exports.handler = (event, context, callback) => {
     
     let params;
 
-    if (event.queryStringParameters && event.queryStringParameters.year) {
+    if (event.queryStringParameters && (event.queryStringParameters.year || event.queryStringParameters.type)) {
+
+        let filters = [];
+
         params = {
             TableName: "AMBCS-Races",
-            FilterExpression: "#year = :year",
-            ExpressionAttributeValues: {
-                ":year": parseInt(event.queryStringParameters.year)
-            },
-            ExpressionAttributeNames: {
-                "#year": "year"
-            }
+            FilterExpression: "",
+            ExpressionAttributeValues: {},
+            ExpressionAttributeNames: {}
         };
+
+        if (event.queryStringParameters.year) {
+            params.ExpressionAttributeValues[":year"] = parseInt(event.queryStringParameters.year);
+            params.ExpressionAttributeNames["#year"] = 'year';
+            filters.push('#year = :year');
+        }
+
+        if (event.queryStringParameters.type) {
+            params.ExpressionAttributeValues[":type"] = event.queryStringParameters.type;
+            params.ExpressionAttributeNames["#type"] = 'type';
+            filters.push('#type = :type');
+        }
+
+        params.FilterExpression = filters.join(' and ');
     } else {
         params = { TableName: "AMBCS-Races" };
     }

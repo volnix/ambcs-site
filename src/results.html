@@ -5,8 +5,6 @@
   <meta content="ambcs arkansas cycling mountain bike mtb" name="keywords">
   <meta content="AMBCS Calendar" name="description">
 
-  <title>AMBCS Race Calendar</title>
-
   <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -16,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/calendar.css" rel="stylesheet" />
+  <link href="css/results.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,7 +28,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="/">Home</a></li>
-          <li><a href="results.html">Results</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
         </ul>
       </nav>
     </div>
@@ -47,7 +45,14 @@
 
         <div class="row title">
           <div class="col">
-            <h1>Race Calendar</h1>
+            <h1>Race Results</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="nav justify-content-center" id="past-results">
+            </ul>
           </div>
         </div>
 
@@ -55,7 +60,7 @@
           <div class="col-lg-8 offset-lg-2" id="marathon">
             <h2>Marathon</h2>
             <div id="marathon-calendar">
-              <div class="loader"><div class="spinner-border loader" role="status"><span class="sr-only">Loading races...</span></div></div>
+              <div class="loader"><div class="spinner-border loader" role="status"><span class="sr-only">Loading results...</span></div></div>
               <table class="table table-borderless table-hover" style="display:none;"></table>
             </div>
           </div>
@@ -65,7 +70,7 @@
           <div class="col-lg-8 offset-lg-2" id="xc">
             <h2>Cross-Country</h2>
             <div id="xc-calendar">
-              <div class="loader"><div class="spinner-border loader" role="status"><span class="sr-only">Loading races...</span></div></div>
+              <div class="loader"><div class="spinner-border loader" role="status"><span class="sr-only">Loading results...</span></div></div>
               <table class="table table-borderless table-hover" style="display:none;"></table>
             </div>
           </div>
@@ -92,7 +97,7 @@
   </footer><!-- #footer -->
 
   <!-- Template Main Javascript File -->
-  <script src="js/calendar.js"></script>
+  <script src="js/results.js"></script>
 
 </body>
 </html>

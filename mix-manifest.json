@@ -2,13 +2,15 @@
     "/public/js/calendar.js": "/public/js/calendar.js",
     "/public/css/home.css": "/public/css/home.css",
     "/public/css/calendar.css": "/public/css/calendar.css",
+    "/public/css/results.css": "/public/css/results.css",
+    "/public/js/results.js": "/public/js/results.js",
     "/public/calendar.html": "/public/calendar.html",
     "/public/index.html": "/public/index.html",
-    "/public/images/backgrounds/bike.png": "/public/images/backgrounds/bike.png",
+    "/public/results.html": "/public/results.html",
+    "/public/images/backgrounds/bike.jpg": "/public/images/backgrounds/bike.jpg",
     "/public/images/backgrounds/ouachitas.jpg": "/public/images/backgrounds/ouachitas.jpg",
     "/public/images/logos/ambcs.jpg": "/public/images/logos/ambcs.jpg",
     "/public/images/favicon.ico": "/public/images/favicon.ico",
     "/public/images/favicon-16x16.png": "/public/images/favicon-16x16.png",
-    "/public/images/favicon-32x32.png": "/public/images/favicon-32x32.png",
-    "/public/images/backgrounds/bike.jpg": "/public/images/backgrounds/bike.jpg"
+    "/public/images/favicon-32x32.png": "/public/images/favicon-32x32.png"
 }

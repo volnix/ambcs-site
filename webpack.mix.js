@@ -12,12 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('src/js/calendar.js', 'public/js');
+mix.js('src/js/results.js', 'public/js');
 
 mix.sass('src/css/home.scss', 'public/css').options({
     processCssUrls: false
 });
 
 mix.sass('src/css/calendar.scss', 'public/css').options({
+    processCssUrls: false
+});
+
+mix.sass('src/css/results.scss', 'public/css').options({
     processCssUrls: false
 });
 

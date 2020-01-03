@@ -1,12 +1,21 @@
 @import 'colors';
 
 table {
-    td {
-        a {
-            color: $yellow;
 
-            &:hover {
-                color: white;
+    tr {
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        td {
+            color: white;
+
+            a {
+                color: $yellow;
+    
+                &:hover {
+                    font-weight: bolder;
+                }
             }
         }
     }
