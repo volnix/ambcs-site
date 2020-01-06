@@ -1,18 +1,29 @@
 @import 'includes/common';
 @import 'includes/backpages_common';
 
-#calendar {
+
+#results {
 
     .calendar-block {
         // text-align: center;
 
-        &:last-child {
-            margin-top: 2rem;
-        }
+        margin-top: 2rem;
 
         .loader {
             color: $yellow;
             text-align: center;
+        }
+
+        #overall {
+
+            ul {
+                padding-left: 1rem;
+
+                li {
+                    list-style-type: none;
+                    margin-top: .5rem;
+                }
+            }
         }
     }
 }

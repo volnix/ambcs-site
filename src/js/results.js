@@ -1,6 +1,7 @@
 import 'bootstrap';
 import EventDisplayer from './event_displayer';
 let range = require('lodash.range');
+let sortBy = require('lodash.sortBy');
 
 let query_string = new URLSearchParams(window.location.search);
 let year = query_string.has('year') ? query_string.get('year') : (new Date().getFullYear());
@@ -20,12 +21,17 @@ header_block.innerHTML = year + ' ' + header_block.innerHTML;
     fetch('https://0ccx6mfjvj.execute-api.us-east-1.amazonaws.com/races?type=' + type + '&year=' + year, {
         method: 'GET'
     }).then((resp) => resp.json()).then((data) => {
-        let races = data.races.filter(race => race.results != undefined);
+        let races = sortBy(data.races.filter(race => race.results != undefined), ['date']);
         displayer.display(races);
     }).catch(function(error) {
         console.error(error);
     });
 });
+
+// Hide overall results if not the current year
+if (year != (new Date().getFullYear())) {
+    document.getElementById('overall').style = 'display: none;';
+}
 
 // Display our year selector
 let result_selector_element = document.getElementById('past-results');

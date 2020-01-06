@@ -1,5 +1,6 @@
 import 'bootstrap';
 import EventDisplayer from './event_displayer';
+let sortBy = require('lodash.sortBy');
 
 let year = (new Date().getFullYear());
 
@@ -16,7 +17,7 @@ header_block.innerHTML = year + ' ' + header_block.innerHTML;
     fetch('https://0ccx6mfjvj.execute-api.us-east-1.amazonaws.com/races?type=' + type + '&year=' + year, {
         method: 'GET'
     }).then((resp) => resp.json()).then((data) => {
-        displayer.display(data.races);
+        displayer.display(sortBy(data.races, ['date']));
     }).catch(function(error) {
         console.error(error);
     });
