@@ -13,11 +13,11 @@
 main {
     padding-top: 5rem;
     width: 100%;
-    height: 100vh;
     background: url('../images/backgrounds/bike.jpg') top center;
     //background: url('../images/background-bell-rider.jpg') top center;
+    background-position: top;
+    background-position: 0% 25%;
     background-size: cover;
-    position: relative;
     color: #fff;
 
     &:before {

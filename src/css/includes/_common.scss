@@ -4,7 +4,7 @@
 @import 'colors';
 
 body {
-  background: #fff;
+  background: transparent;
   color: #666666;
   font-family: "Raleway", sans-serif;
 }
@@ -55,6 +55,15 @@ body {
           font-size: 13px;
           outline: none;
         }
+
+        div.dropdown-menu {
+          background-color: transparent;
+
+          a {
+            margin-top: .5rem;
+            display: block !important;
+          }
+        }
       }
     }
   }
@@ -90,5 +99,15 @@ a {
     color: $yellow;
     outline: none;
     text-decoration: none;
+  }
+}
+
+footer {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  .container {
+    text-align: center;
   }
 }

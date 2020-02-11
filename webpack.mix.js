@@ -26,8 +26,10 @@ mix.sass('src/css/results.scss', 'public/css').options({
     processCssUrls: false
 });
 
+mix.sass('src/css/rules-forms.scss', 'public/css').options({
+    processCssUrls: false
+});
+
 mix.copy('src/*.html', 'public');
-mix.copy('src/images/backgrounds/*', 'public/images/backgrounds');
-mix.copy('src/images/logos/*', 'public/images/logos');
-mix.copy('src/images/favicon.ico', 'public/images');
-mix.copy('src/images/favicon-*', 'public/images');
+mix.copyDirectory('src/documents', 'public/documents');
+mix.copyDirectory('src/images', 'public/images');
