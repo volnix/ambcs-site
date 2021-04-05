@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ambcs arkansas cycling mountain bike mtb" name="keywords">
+  <meta content="AMBCS Calendar" name="description">
+
+  <title>AMBCS Race Calendar</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/calendar.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+              <a class="dropdown-item" href="rules-forms.html">Rules/Forms</a>
+              <a class="dropdown-item" href="paydirt.html">Pay Dirt</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="links.html">Links</a>
+            </div>
+          </li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!--==========================
+      Calendar
+    ============================-->
+    <section id="calendar">
+
+      <div class="calendar-container container-fluid">
+
+        <div class="row title">
+          <div class="col">
+            <h1>Race Calendar</h1>
+          </div>
+        </div>
+
+        <div class="row calendar-block">
+          <div class="col-lg-8 offset-lg-2" id="marathon">
+            <h2>Marathon</h2>
+            <div id="marathon-calendar">
+              <div class="loader"><div class="spinner-border loader" role="status"><span class="sr-only">Loading races...</span></div></div>
+              <table class="table table-borderless table-hover" style="display:none;"></table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row calendar-block">
+          <div class="col-lg-8 offset-lg-2" id="xc">
+            <h2>Cross-Country</h2>
+            <div id="xc-calendar">
+              <div class="loader"><div class="spinner-border loader" role="status"><span class="sr-only">Loading races...</span></div></div>
+              <table class="table table-borderless table-hover" style="display:none;"></table>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section><!-- #calendar -->
+
+    <footer id="footer">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; AMBCS 2020</p>
+        <p class="m-0 small">Background Photo: <a href="http://www.runbikeswimphotos.com/" target="_blank">Run Bike Swim Photos</a></p>
+      </div>
+  
+    </footer><!-- #footer -->
+
+  </main>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/calendar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+#header {
+    background-color: rgba(black, .6);
+    padding: 15px 0px;
+    height: auto !important;
+}
+
+.title {
+    color: white;
+    display: block !important;
+    text-align: center;
+}
+
+main {
+    padding-top: 5rem;
+    width: 100%;
+    background: url('../images/backgrounds/bike.jpg') top center;
+    //background: url('../images/background-bell-rider.jpg') top center;
+    background-position: top;
+    background-position: 0% 25%;
+    background-size: cover;
+    color: #fff;
+
+    &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

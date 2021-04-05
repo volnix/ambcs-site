@@ -1,0 +1,32 @@
+@import 'includes/common';
+@import 'includes/backpages_common';
+
+
+div.rules-forms-block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+
+    .image-container {
+        text-align: center !important;
+        img {
+            width: 50%;
+        }
+    }
+
+    div {
+    
+        ul.list-group {
+            background-color: transparent;
+        
+            li.list-group-item {
+                background-color: transparent;;
+            }
+        }
+
+        a.rule-link {
+            font-size: 1.5rem;
+            display: block;
+        }
+    }
+}
